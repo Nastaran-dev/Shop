@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-
+import Header from "./Header/page";
 const nacyFont = localFont({
   src: "../../public/Font/nacy.ttf",
   variable: "--font-nacy",
@@ -24,6 +24,7 @@ export default function RootLayout({
       <body
         className={`${nacyFont.variable} antialiased`}
       >
+        <Header/>
         {children}
       </body>
     </html>
