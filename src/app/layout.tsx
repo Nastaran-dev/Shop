@@ -24,7 +24,8 @@ export default function RootLayout({
       <body
         className={`${nacyFont.variable} antialiased`}
       >
-        <Header/>
+        <div className="px-4 md:px-16"><Header/></div>
+        
         {children}
       </body>
     </html>
