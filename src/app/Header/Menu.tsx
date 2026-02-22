@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const navItems = [
-  { label: "Our products", href: "/products" },
+  { label: "Our products", href: "/Header/Menupage" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
