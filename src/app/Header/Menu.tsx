@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const navItems = [
-  { label: "Our products", href: "/Header/Menupage" },
+  { label: "Our products", href: "/Header/Product" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
@@ -18,7 +18,7 @@ const navItems = [
 
 export default function NavMenu() {
   return (
-    <nav className="w-full  px-8 py-4">
+    <nav className="w-full   px-8 py-4">
       <NavigationMenu>
         <NavigationMenuList className="gap-4">
           {navItems.map((item) => (

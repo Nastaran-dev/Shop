@@ -68,7 +68,7 @@ export default function ProductsPage() {
       : products.filter((p) => p.category === activeCategory);
 
   return (
-    <main className="min-h-screen px-8 py-12">
+    <main className="min-h-screen px-8 py-12 mt-15">
       <h1 className="text-5xl font-extrabold text-neutral-900 mb-6 tracking-tight">
         Products
       </h1>
