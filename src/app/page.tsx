@@ -9,14 +9,19 @@ import  {SponsoredBanner} from './section6/section6'
 import { SaleBanner } from './section7/section7'
 import { DiscoverMore } from './section8/section8'
 import { NewsletterSection } from './section9/section9'
-export default function page() {
-   const [data, setdata] = useState([])
+export default function Page() {
+   interface Item {
+  id: string
+  img: string
+  title: string
+}
+const [data, setData] = useState<Item[]>([])
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("https://69536ae3a319a928023b6064.mockapi.io/data")
       const json = await response.json()
-      setdata(json)
+      setData(json)
     }
     fetchData()
   }, [])
