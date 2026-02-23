@@ -1,9 +1,9 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-[600px] rounded-2xl overflow-hidden bg-neutral-900 ">
+    <section className=" w-full min-h-[600px] rounded-2xl overflow-hidden bg-neutral-900 mt-25 relative ">
       <div className="absolute inset-0">
         <img
           src="/images/orange.jpg"
@@ -27,14 +27,13 @@ export default function HeroSection() {
           Tackle this season with the Fabrix-4000
         </p>
 
-        <Button
-          variant="secondary"
-          size="lg"
-          className="w-fit rounded-full px-6 py-3 bg-white text-black hover:bg-white/90 font-medium text-base gap-2 shadow-lg"
+        <Link
+         href="/Header/Menupage"
+          className="w-fit rounded-full px-6 py-3 bg-white text-black hover:bg-white/90 font-medium text-base gap-2 shadow-lg flex items-center transition-colors"
         >
           <ArrowUpRight className="w-5 h-5" />
           Shop Now
-        </Button>
+        </Link>
       </div>
 
       <div className="absolute bottom-6 right-6 z-20 bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 max-w-xs fix ">

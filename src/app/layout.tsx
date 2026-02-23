@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import Header from "./Header/page";
+import Footer from "./Footer/page"; 
 const nacyFont = localFont({
   src: "../../public/Font/nacy.ttf",
   variable: "--font-nacy",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <div className="px-4 md:px-16"><Header/></div>
         
         {children}
+         <div><Footer/></div>
       </body>
     </html>
   );
