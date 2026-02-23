@@ -37,7 +37,7 @@ function StoryCard({ story }: { story: (typeof stories)[0] }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {/* Image 1 */}
+     
       <img
         src={story.image1}
         alt={story.title}
@@ -48,7 +48,7 @@ function StoryCard({ story }: { story: (typeof stories)[0] }) {
         }}
       />
 
-      {/* Image 2 */}
+   
       <img
         src={story.image2}
         alt={`${story.title} alternate`}
@@ -59,7 +59,7 @@ function StoryCard({ story }: { story: (typeof stories)[0] }) {
         }}
       />
 
-      {/* Gradient overlay */}
+    
       <div
         className="absolute inset-0 transition-opacity duration-500"
         style={{
@@ -69,7 +69,7 @@ function StoryCard({ story }: { story: (typeof stories)[0] }) {
         }}
       />
 
-      {/* Text */}
+     
       <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
         <h3
           className="text-3xl font-black leading-tight mb-1 transition-transform duration-500"
@@ -90,7 +90,7 @@ function StoryCard({ story }: { story: (typeof stories)[0] }) {
           {story.subtitle}
         </p>
 
-        {/* Read more - appears on hover */}
+      
         <div
           className="mt-3 flex items-center gap-1 text-xs font-semibold text-white/80 transition-all duration-500"
           style={{
@@ -111,7 +111,7 @@ function StoryCard({ story }: { story: (typeof stories)[0] }) {
 export function CuratedStories() {
   return (
     <section className="w-full bg-[#111111] py-16 px-6 md:px-12 rounded-2xl">
-      {/* Header */}
+     
       <div className="flex justify-between">  <h2
         className="text-white mb-10 leading-tight"
         style={{
@@ -128,7 +128,7 @@ export function CuratedStories() {
       </div>
     
 
-      {/* Cards Grid */}
+     
       <div className="flex flex-col md:flex-row gap-4">
         {stories.map((story) => (
           <StoryCard key={story.id} story={story} />
