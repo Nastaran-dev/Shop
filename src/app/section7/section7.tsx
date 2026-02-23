@@ -18,14 +18,14 @@ export function SaleBanner() {
         className="w-full max-w-6xl mx-auto overflow-hidden rounded-2xl grid grid-cols-1 md:grid-cols-2"
         style={{ minHeight: "460px" }}
       >
-        {/* Left - Image */}
+      
         <div
           className="relative overflow-hidden cursor-pointer"
           style={{ minHeight: "340px" }}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >
-          {/* Image 1 */}
+         
           <img
             src={IMAGE_1}
             alt="Sale footwear"
@@ -36,7 +36,7 @@ export function SaleBanner() {
             }}
           />
 
-          {/* Image 2 */}
+       
           <img
             src={IMAGE_2}
             alt="Sale footwear alternate"
@@ -48,7 +48,7 @@ export function SaleBanner() {
           />
         </div>
 
-        {/* Right - Dark panel */}
+      
         <div className="bg-[#111111] flex flex-col justify-center px-10 py-14 gap-6">
           <h2
             className="text-white leading-none"

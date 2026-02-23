@@ -6,6 +6,8 @@ import{ CarouselPlugin} from './section4/section4'
 import{ CuratedStories} from './section5/section5'
 import  {SponsoredBanner} from './section6/section6'
 import { SaleBanner } from './section7/section7'
+import { DiscoverMore } from './section8/section8'
+import { NewsletterSection } from './section9/section9'
 export default function page() {
   return (
     <div className='px-4 md:px-16'>
@@ -16,6 +18,8 @@ export default function page() {
      <CuratedStories/>
       <SponsoredBanner/>
        <SaleBanner/>
+       <DiscoverMore/>
+       <NewsletterSection/>
     </div>
   )
 }
